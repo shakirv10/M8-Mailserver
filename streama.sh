@@ -6,8 +6,8 @@ sudo apt-get upgrade -y
 
 # Install Java and create directory Streama
 sudo apt install openjdk-8-jre
-mkdir /data
-mkdir /data/streama
+sudo mkdir /data
+sudo mkdir /data/streama
 touch /data/streama/README.md
 
 # New linux user
