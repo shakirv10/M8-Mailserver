@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Updates
 sudo apt-get update
 sudo apt-get upgrade
@@ -9,7 +11,7 @@ mkdir /data/streama
 touch /data/streama/README.md
 
 # New linux user
-sudo adduser streama  # add password to README.md
+sudo useradd -m streama  # add password to README.md
 echo streama:streama | sudo chpasswd
 sudo usermod -aG sudo streama
 sudo chown streama:streama /data/streama/ -R
