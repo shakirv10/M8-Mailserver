@@ -10,6 +10,7 @@ touch /data/streama/README.md
 
 # New linux user
 sudo adduser streama  # add password to README.md
+echo streama:streama | sudo chpasswd
 sudo usermod -aG sudo streama
 sudo chown streama:streama /data/streama/ -R
 
